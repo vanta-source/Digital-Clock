@@ -92,7 +92,7 @@ setInterval(() => {
     hours = `0${hours}`;
   }
 
-  console.log(`Current Time: ${hours}:${minutes}`);
+
   let myTime = document.getElementById("time");
 
   const daysOfWeek = {
@@ -114,7 +114,7 @@ setInterval(() => {
     totalminute = 720 - (hours * 60 + Number(minutes));
   }
 
-  console.log(totalminute);
+
   let circleProgress = document.getElementById("circle-progress");
   circleProgress.setAttribute("stroke-dashoffset", totalminute);
   myTime.innerText = `${hours}:${minutes}`;
